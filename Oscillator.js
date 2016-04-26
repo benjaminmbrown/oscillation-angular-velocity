@@ -1,8 +1,8 @@
-var Oscillator = funciton(){
+var Oscillator = function(){
 	
 	this.angle = createVector();
 	this.velocity = createVector(random(-0.03, 0.03), random(-0.03, 0.03));
-	this.amplitude = createVector(random(20,height/2));
+	this.amplitude = createVector(random(20,width/2), random(20,height/2));
 
 	this.oscillate = function(){
 		this.angle.add(this.velocity);
